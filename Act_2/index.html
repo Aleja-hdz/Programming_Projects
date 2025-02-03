@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <button id="btn-ant" class="btn-ant" type="button" onclick="ant()">< Anterior</button>
+        <p class="text1">Pagina <span id="page-ant" style="background-color: #60d526;">0</span> de <span id="page-sig" style="background-color: #60d526;">0</span></p>
+        <button id="btn-sig" class="btn-sig" type="button" onclick="sig()"> Siguiente ></button>
+    </nav>
+    <div class="container">
+        <p class="text2">Personajes: <span class="text3" id="numero-personajes"> 0</span></p>
+        <!--<div class="targets">
+            <div class="image-person">
+                <img class="image" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
+             </div>
+            <div class="info">
+                <b><p>Nombre:</p></b>
+                <p>Alejandro</p>
+                <b><p>Estado y especie:</p></b>
+                <p><span class="status status-alive"></span>Vivo - Humano</p>
+                <b><p>Ubicacion: </p></b>
+                <p>Tehuitzingo</p>
+            </div>-->
+        </div>
+        <div id="targetCharacter" class="container-targets">
+            <div class="lds-hourglass">Cargando...</div>
+        </div>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
